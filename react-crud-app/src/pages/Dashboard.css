@@ -1,0 +1,42 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 60px); /* Adjust based on your navbar height */
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.tiles-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tile {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 200px; /* Fixed width for the tiles */
+    transition: transform 0.2s;
+}
+
+.tile h2 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+}
+
+.tile p {
+    color: #7f8c8d;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
