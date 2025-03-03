@@ -26,7 +26,7 @@ const PostList = () => {
 
   return (
     <Box sx={{ padding: 3 , bgcolor: 'background.default'}}>
-      <Typography variant="h4" sx={{ marginBottom: 3 }}>
+      <Typography variant="h4" sx={{ marginBottom: 3 }} color="primary">
         Posts
       </Typography>
       
