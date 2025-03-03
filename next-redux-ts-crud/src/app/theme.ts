@@ -7,13 +7,13 @@ const lightTheme = createTheme({
     palette: {
       mode: 'light',
       primary: {
-        main: '#1976d2',
+        main: '#fff',
       },
       secondary: {
-        main: '#f50057',
+        main: '#B4EBE6',
       },
       background: {
-        default: '#f5f5f5', // Custom background color for light mode
+        default: '#fff', // Custom background color for light mode
       },
     },
   });
