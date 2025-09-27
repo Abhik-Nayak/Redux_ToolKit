@@ -1,0 +1,19 @@
+/* src/pages/ProductDetails.module.scss */
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+.info {
+  max-width: 600px;
+}
+.price {
+  color: #0070f3;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

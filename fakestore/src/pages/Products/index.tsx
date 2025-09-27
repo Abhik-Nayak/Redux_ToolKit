@@ -1,7 +1,8 @@
 // src/pages/Products.tsx
 import React, { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { fetchProducts } from '../features/products/productsSlice';
+import { Link } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
+import { fetchProducts } from '../../features/products/productsSlice';
 import styles from './Products.module.scss';
 
 const Products: React.FC = () => {
@@ -21,11 +22,11 @@ const Products: React.FC = () => {
       {status === 'failed' && <p>Error: {error}</p>}
       <div className={styles.grid}>
         {items.map(product => (
-          <div key={product.id} className={styles.card}>
-            <img src={product.image} alt={product.title} />
-            <h3>{product.title}</h3>
-            <p>${product.price}</p>
-          </div>
+          <Link to={`/products/${product.id}`} key={product.id} className={styles.card}>
+              <img src={product.image} alt={product.title} />
+              <h3>{product.title}</h3>
+              <p>${product.price}</p>
+          </Link>
         ))}
       </div>
     </div>
