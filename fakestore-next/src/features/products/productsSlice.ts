@@ -36,7 +36,7 @@ const productsSlice = createSlice({
   name: "products",
   initialState,
   reducers: {
-    clearSelcted: (state) => {
+    clearSelected: (state) => {
       state.selectedItem = {} as Product;
     },
   },
@@ -74,5 +74,5 @@ const productsSlice = createSlice({
   },
 });
 
-export const { clearSelcted } = productsSlice.actions;
+export const { clearSelected } = productsSlice.actions;
 export default productsSlice.reducer;
