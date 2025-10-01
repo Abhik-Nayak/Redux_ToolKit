@@ -1,0 +1,17 @@
+.card {
+  display: block;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  background: white;
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
+.price {
+  color: #0070f3;
+  font-weight: 700;
+}
