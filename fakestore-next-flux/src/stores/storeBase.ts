@@ -1,4 +1,3 @@
-// src/stores/storeBase.ts
 type Listener = () => void;
 
 export class StoreBase {

@@ -1,4 +1,3 @@
-// src/hooks/useStore.ts
 "use client";
 
 import { useSyncExternalStore } from "react";
